@@ -18,6 +18,7 @@
                       MaxZoomFactor="2"
                       MinZoomFactor="0.5"
                       HorizontalScrollBarVisibility="Visible"
+                      HorizontalScrollMode="Enabled"
                       ZoomMode="Enabled">
 
             <ScrollViewer Name="InnerScrollViewer"                          
@@ -61,7 +62,7 @@
                 <Button Name="ZoomInButton" Tapped="ZoomInButton_Tapped" Margin="2,0">
                 ZoomIn
             </Button>
-                <Button Name="ZoomOutButton" Tapped="ZoomOutButton_Tapped" Margin="2,0">
+            <Button Name="ZoomOutButton" Tapped="ZoomOutButton_Tapped" Margin="2,0">
                 ZoomOut
             </Button>
 
