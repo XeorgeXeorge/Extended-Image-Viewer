@@ -10,7 +10,7 @@ and community backing.
 
 ### Phase 1
 
-The Initial Phase of this attemt goes through how to implement some basic view management on aN image, it allows zooming even when the image is locked in the horizontal/vertical axis, it also introduces binding and DPs right off the boot so make sure you familiarize your self with those consepts before going deeper.
+The Initial Phase of this attemt goes through how to implement some basic view management on an image, it allows zooming even when the image is locked in the horizontal/vertical axis, it also introduces binding and DPs right off the boot so make sure you familiarize your self with those consepts before going deeper.
 
 
 ### Phase 2
