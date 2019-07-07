@@ -15,4 +15,4 @@ The Initial Phase of this attemt goes through how to implement some basic view m
 
 ### Phase 2
 
-(Todo) introduce a container that will fit multiple images and allow for naviating through them in an optimal way.
+(Todo) introduce a Control that will contain multiple images, something like Flipview, it will  allow for browing through images in an optimal way.
