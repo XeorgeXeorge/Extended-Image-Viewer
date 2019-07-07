@@ -1,0 +1,71 @@
+﻿<Page
+    x:Class="ImageViewer_Phase_1.ImagePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ImageViewer_Phase_1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>      
+        
+        <ScrollViewer Name="ZoomAndPanningScrollViewer" 
+                      MaxZoomFactor="2"
+                      MinZoomFactor="0.5"
+                      HorizontalScrollBarVisibility="Visible"
+                      ZoomMode="Enabled">
+
+            <ScrollViewer Name="InnerScrollViewer"                          
+                             Width="{x:Bind ZoomAndPanningScrollViewer.ViewportWidth, Mode=OneWay}"
+                             Height="{x:Bind ZoomAndPanningScrollViewer.ViewportHeight, Mode=OneWay}"                          
+                             HorizontalScrollBarVisibility="{x:Bind FitImageHorizontally,Mode=OneWay}"
+                             VerticalScrollBarVisibility="{x:Bind FitImageVertically,Mode=OneWay}">
+                
+                <Grid>
+                    <Image Name="CoreImage" />
+                </Grid>                              
+                
+            </ScrollViewer>         
+            
+        </ScrollViewer>
+
+
+
+        <Grid Grid.Row="1" Name="ControlsGridView"   
+               Background="{ThemeResource SystemControlDisabledChromeMediumLowBrush}">    
+           
+            <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+
+                <Button Name="ChangeImageButton" Tapped="ChangeImageButton_Tapped"  Margin="2,0">
+                Change Image
+            </Button>
+
+ 
+                <ToggleButton Name="LockHorizontallyToggleButton" Margin="2,0"
+                              Click="LockHorizontallyToggleButton_Click">
+                    Fit Horizontallly
+                </ToggleButton>
+                
+                <ToggleButton Name="LockVerticallyToggleButton" Margin="2,0"
+                              Click="LockVerticallyToggleButton_Click"
+                              >
+                    Fit Verically
+                </ToggleButton>
+
+
+                <Button Name="ZoomInButton" Tapped="ZoomInButton_Tapped" Margin="2,0">
+                ZoomIn
+            </Button>
+                <Button Name="ZoomOutButton" Tapped="ZoomOutButton_Tapped" Margin="2,0">
+                ZoomOut
+            </Button>
+
+        </StackPanel>
+        </Grid>
+    </Grid>
+</Page>
