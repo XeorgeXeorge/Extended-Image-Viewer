@@ -15,4 +15,14 @@ The Initial Phase of this attemt goes through how to implement some basic view m
 
 ### Phase 2
 
-(Todo) introduce a Control that will contain multiple images, something like Flipview, it will  allow for browing through images in an optimal way.
+(Todo) introduce a Control that will contain multiple images, something like a Flipview, it will allow for browing through images in an optimal way, it wont stick on one control tho, i'll try to emulate most popular Image viewing and browsing experiences, anything from an Comic Viewer to BingleDuck image results page will be implemented. albeit with a variable degree of success. 
+ 
+### Phase 3
+
+Phase 3 will go into the nitty gritty of Image data handling.
+There will be stuff like Box selectors, cropping, drawing, resizing etc, believe me, they are a lot more simple than they sound.
+It will also go through most of Imaging related entities in UWP, Bitmaps, Softwarebitmaps, BitmapSources, and many others, it will show how to interact from buffers, uris, files, rendered Xaml, Clipboard.... you name it.
+
+
+### Phase 4 
+Will be a conserned effort at trying to make an End-User app out of all this.
