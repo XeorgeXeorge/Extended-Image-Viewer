@@ -1,6 +1,6 @@
 # A work-in-progress, UWP image Viewer.
 
-The repo will a follow a gradual, step by step update procedure with an emphasis on teaching the intregal designs and technical know=how 
+The repo will a follow a gradual, step by step update procedure with an emphasis on teaching the intregal designs and technical know-how 
 that go into Image viewing and management in UWP.
 
 There will be an end product at some point, something that could actually be used by normies but thats up to my time contraints
