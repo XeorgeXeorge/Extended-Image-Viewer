@@ -15,7 +15,7 @@ The Initial Phase of this attemt goes through how to implement some basic view m
 
 ### Phase 2
 
-*under work* introduce a Control that will contain multiple images, something like a Flipview, it will allow for browing through images in an optimal way, it wont stick on one control tho, i'll try to emulate most popular Image viewing and browsing experiences, anything from an Comic Viewer to BingleDuck image results page will be implemented. albeit with a variable degree of success. 
+*under work* Introduce a Control that will contain multiple images, something like a Flipview, it will allow for browing through images in an optimal way, it wont stick on one control tho, i'll try to emulate most popular Image viewing and browsing experiences, anything from an Comic Viewer to BingleDuck image results page will be implemented. albeit with a variable degree of success. 
  
 ### Phase 3
 
